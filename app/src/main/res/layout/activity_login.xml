@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Login">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:gravity="center">
+    <com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/correoLog"
+                android:hint="@string/correoLog"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/passLog"
+                android:hint="@string/passLog"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/BtnLog"
+            android:layout_marginTop="10dp"
+            android:hint="@string/BtnLog"
+            android:textSize="20sp"
+            android:backgroundTint="#8030AA"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

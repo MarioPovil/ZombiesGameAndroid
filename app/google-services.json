@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "444496828231",
+    "project_id": "zombiesandroid-7722f",
+    "storage_bucket": "zombiesandroid-7722f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444496828231:android:113c596e88d6052320de62",
+        "android_client_info": {
+          "package_name": "com.MarioPovil.zombies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444496828231-kkejosujfv7pdmfaneuu2da5e44je81k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MarioPovil.zombies",
+            "certificate_hash": "2be1537a9aa13d442db84cff365a3934f02620bf"
+          }
+        },
+        {
+          "client_id": "444496828231-rk5r814l71nf1hgu268v952ds4kjk9fs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLm9o--uK5SSkRmZ1rWb3UyLBgQCIvuS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444496828231-rk5r814l71nf1hgu268v952ds4kjk9fs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

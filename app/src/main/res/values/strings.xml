@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Zombies</string>
+    <!--Actividad Main Activity-->
+    <string name="BtnLogin">LOGIN</string>
+    <string name="BtnRegister">REGISTER</string>
+
+    <!--Actividad Registo-->
+    <string name="correoEt">Email</string>
+    <string name="passEt">Password</string>
+    <string name="nombreEt">Nombre</string>
+    <string name="fechaTxt">Fecha</string>
+    <string name="Registrar">Registrar</string>
+    <string name="middle">OR</string>
+
+    <!-- Actividad Login-->
+    <string name="correoLog">Email</string>
+    <string name="passLog">Password</string>
+    <string name="BtnLog">Ingresar</string>
+</resources>
