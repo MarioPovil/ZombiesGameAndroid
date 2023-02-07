@@ -9,6 +9,8 @@
     <string name="passEt">Password</string>
     <string name="nombreEt">Nombre</string>
     <string name="fechaTxt">Fecha</string>
+    <string name="edadEt">Edad</string>
+    <string name="paisEt">Pais</string>
     <string name="Registrar">Registrar</string>
     <string name="middle">OR</string>
 
@@ -16,4 +18,41 @@
     <string name="correoLog">Email</string>
     <string name="passLog">Password</string>
     <string name="BtnLog">Ingresar</string>
+    <!--SPLASH-->
+    <string name="textView">By Mario Ponce</string>
+    <string name="textView2">ZOMBIES</string>
+    <!--MENU-->
+    <string name="MiPerfiltxt">Mi Perfil</string>
+    <string name="MiPuntuaciontxt">Mi Puntuación</string>
+    <string name="JugarBtn">Jugar</string>
+    <string name="EditarBtn">Editar</string>
+    <string name="CPswBtn">Cambiar Contraseña</string>
+    <string name="PuntuacionesBtn">Puntuaciones</string>
+    <string name="AcercaDeBtn">Acerca de</string>
+    <string name="CerrarSesion">Cerrar Sesión</string>
+    <string name="Zombies">--</string>
+    <string name="Menutxt">Menú</string>
+    <string name="fotoPerfil">--</string>
+    <string name="uid">--</string>
+    <string name="fechaReg">--</string>
+    <string name="correo">--</string>
+    <string name="nombre">--</string>
+    <string name="edad">--</string>
+    <string name="pais">--</string>
+    <!-- ESCENARIO-->
+    <string name="TvContador">0</string>
+    <string name="TvNombre">--</string>
+    <string name="TvTiempo">0</string>
+
+    <!--PANTALLA-->
+    <string name="AnchoTv">--</string>
+    <string name="AltoTv">--</string>
+
+    <!--GameOver-->
+    <string name="TimeOut">!El tiempo a finalizado!</string>
+    <string name="Kills">Has Matado</string>
+    <string name="NKills">--</string>
+    <string name="JugarDeNuevo">Jugar de nuevo?</string>
+    <string name="IrAMenu">Regresar al menu</string>
+    <string name="Puntajes">Ver Puntuajes</string>
 </resources>

@@ -1,9 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Menu">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <!--Perfil Del Jugador-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/MiPerfiltxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="@string/MiPerfiltxt"
+                />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/fotoPerfil"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/soldado"
+                    />
+            <!-- UID -->
+            <TextView
+                android:id="@+id/uid"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/uid"
+                />
+            <!-- Correo -->
+            <TextView
+                android:id="@+id/correo"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/correo"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <!-- Nombre -->
+                <TextView
+                    android:id="@+id/nombre"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre"
+                    />
+                <!-- Edad -->
+                <TextView
+                    android:id="@+id/edadEt"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edad"
+                    />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <!-- Pais -->
+                <TextView
+                    android:id="@+id/paisEt"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pais"
+                    />
+            </LinearLayout>
+            <!-- Fecha De Registo -->
+            <TextView
+                android:id="@+id/fechareg"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fechaReg"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <!-- Puntuacion  -->
+        <TextView
+            android:id="@+id/MiPuntuaciontxt"
+            android:text="@string/MiPuntuaciontxt"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/Zombies"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Zombies"
+                />
+            <!-- Zombies -->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imagen"
+                android:layout_width="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="50dp"
+                android:src="@drawable/zombie"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Menu -->
+        <TextView
+            android:id="@+id/Menutxt"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Menutxt"
+            />
+        <!-- JUGAR -->
+        <Button
+            android:id="@+id/JugarBtn"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boton_personalizado"
+            android:text="@string/JugarBtn"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"/>
+        <!-- Editar -->
+        <Button
+            android:id="@+id/EditarBtn"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boton_personalizado"
+            android:text="@string/EditarBtn"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"/>
+        <!-- Cambiar contraseña -->
+        <Button
+            android:id="@+id/CPswBtn"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boton_personalizado"
+            android:text="@string/CPswBtn"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"/>
+        <!-- PUNTUACIONES -->
+        <Button
+            android:id="@+id/PuntuacionesBtn"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boton_personalizado"
+            android:text="@string/PuntuacionesBtn"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"/>
+        <!-- ACERCA DE -->
+        <Button
+            android:id="@+id/AcercaDeBtn"
+            android:background="@drawable/boton_personalizado"
+            android:layout_marginTop="10dp"
+            android:text="@string/AcercaDeBtn"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"/>
+        <!-- CERRAR SESION -->
+        <Button
+            android:id="@+id/CerrarSesion"
+            android:background="@drawable/boton_personalizado"
+            android:layout_marginTop="10dp"
+            android:text="@string/CerrarSesion"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

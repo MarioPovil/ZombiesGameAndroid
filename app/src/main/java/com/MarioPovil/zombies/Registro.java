@@ -27,7 +27,7 @@ import java.util.HashMap;
 
 public class Registro extends AppCompatActivity {
     //Declaracion de Variables
-    EditText correoEt, passEt, nombreEt;
+    EditText correoEt, passEt, nombreEt, paisEt, edadEt;
     TextView fechaTxt;
     Button Registrar;
 
@@ -44,6 +44,8 @@ public class Registro extends AppCompatActivity {
         nombreEt = findViewById(R.id.nombreEt);
         fechaTxt = findViewById(R.id.fechaTxt);
         Registrar = findViewById(R.id.Registrar);
+        edadEt = findViewById(R.id.edadEt);
+        paisEt = findViewById(R.id.paisEt);
 
         //Inicializar Firebase
         auth = FirebaseAuth.getInstance();
@@ -90,9 +92,14 @@ public class Registro extends AppCompatActivity {
                     String passString = passEt.getText().toString();
                     String nombreString = nombreEt.getText().toString();
                     String fechaString = fechaTxt.getText().toString();
+                    String edadString = edadEt.getText().toString();
+                    String paisString = paisEt.getText().toString();
 
                     HashMap<Object, Object> DatosJugador = new HashMap<>(); /*HashMap sirve para dar clases a nuestro servidor*/
                     DatosJugador.put("Uid", uidString);
+                    DatosJugador.put("Edad", edadString);
+                    DatosJugador.put("Pais", paisString);
+                    DatosJugador.put("imagen","");
                     DatosJugador.put("Email", correoString);
                     DatosJugador.put("Password", passString);
                     DatosJugador.put("Nombres", nombreString);

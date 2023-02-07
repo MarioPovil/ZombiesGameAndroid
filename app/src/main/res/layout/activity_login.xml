@@ -1,53 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFFFFF"
     tools:context=".Login">
+
     <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/midLay"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10dp"
-        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
         android:orientation="vertical"
-        android:gravity="center">
-    <com.google.android.material.textfield.TextInputLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-            <EditText
-                android:id="@+id/correoLog"
-                android:hint="@string/correoLog"
-                android:inputType="textEmailAddress"
-                android:textSize="18sp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:importantForAutofill="no" />
-        </com.google.android.material.textfield.TextInputLayout>
+        android:padding="10dp">
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <EditText
-                android:id="@+id/passLog"
-                android:hint="@string/passLog"
-                android:layout_marginTop="10dp"
-                android:inputType="textPassword"
-                android:textSize="18sp"
+                android:id="@+id/correoLog"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:importantForAutofill="no" />
+                android:layout_margin="5dp"
+                android:hint="@string/correoLog"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:passwordToggleEnabled="true"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/passLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/passLog"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
         <Button
             android:id="@+id/BtnLog"
-            android:layout_marginTop="10dp"
-            android:hint="@string/BtnLog"
-            android:textSize="20sp"
-            android:backgroundTint="#8030AA"
-            android:textColorHint="@color/white"
             android:layout_width="match_parent"
-            android:layout_height="50dp"/>
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#8030AA"
+            android:hint="@string/BtnLog"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

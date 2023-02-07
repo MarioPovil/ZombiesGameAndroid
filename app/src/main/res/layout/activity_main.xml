@@ -4,43 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#343"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="10dp"
         android:layout_margin="5dp"
-        android:background="#3030A5"
+        android:background="@drawable/main_panel_person"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <!--Login-->
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/BtnLogin"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
-            android:backgroundTint="#0F8014"
+            android:textSize="16sp"
+            android:background="@drawable/boton_inicio"
             android:text="@string/BtnLogin"
             app:cornerRadius="10dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:shadowColor="#86000000"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="2"
             android:text="@string/middle" />
 
 
         <!--Registrar-->
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/BtnRegister"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
-            android:backgroundTint="#0F8014"
-            android:text="@string/BtnRegister"
-            app:cornerRadius="10dp" />
+            android:background="@drawable/boton_inicio"
+            android:text="@string/BtnRegister" />
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>

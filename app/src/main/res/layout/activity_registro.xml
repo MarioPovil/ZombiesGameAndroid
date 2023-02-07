@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,56 +10,86 @@
     android:gravity="center">
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="#E201B504"
+        android:layout_width="406dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rounded_panel"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="10dp">
 
+        <!--Imagen-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/soldado"
+            android:layout_marginTop="5dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+        <!--Correo-->
         <EditText
             android:id="@+id/correoEt"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="@dimen/mTop"
             android:hint="@string/correoEt"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress" />
-
+        <!--Password-->
         <EditText
             android:id="@+id/passEt"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="@dimen/mTop"
+            android:layout_marginTop="@dimen/mTop2"
             android:hint="@string/passEt"
             android:importantForAutofill="no"
             android:inputType="textPassword" />
-
+        <!--Nombre-->
         <EditText
             android:id="@+id/nombreEt"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="@dimen/mTop"
+            android:layout_marginTop="@dimen/mTop2"
             android:hint="@string/nombreEt"
             android:importantForAutofill="no"
             android:inputType="textPersonName" />
-
+        <!--Edad-->
+        <EditText
+            android:id="@+id/edadEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/mTop2"
+            android:hint="@string/edadEt"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+        <!--Pais-->
+        <EditText
+            android:id="@+id/paisEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/mTop2"
+            android:hint="@string/paisEt"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+        <!--Fecha-->
         <TextView
             android:id="@+id/fechaTxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/mTop"
+            android:layout_marginTop="@dimen/mTop2"
+            android:textColor="@color/white"
             android:text="@string/fechaTxt"
             android:textAlignment="center"
             android:textSize="20sp" />
-
+        <!--Btn registro-->
         <Button
             android:id="@+id/Registrar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/mTop"
+            android:layout_height="55dp"
+            android:layout_marginTop="@dimen/mTop2"
             android:backgroundTint="#028336"
-            android:text="@string/Registrar" />
+            android:text="@string/Registrar"
+            app:cornerRadius="15dp" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 </RelativeLayout>

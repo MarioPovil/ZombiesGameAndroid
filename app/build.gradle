@@ -32,12 +32,15 @@ android {
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.6.0'
-    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
-    implementation 'com.google.android.material:material:1.7.0'       /*DISEÑO*/
+    implementation 'com.google.android.material:material:1.8.0'       /*DISEÑO*/
     implementation 'com.google.firebase:firebase-auth:21.1.0'           /*AUTENTICACIÓN*/
     implementation 'com.google.firebase:firebase-database:20.1.0'  /*BASE DATOS*/
+    implementation 'com.airbnb.android:lottie:3.7.2' /*Animaciones*/
+    implementation 'com.squareup.picasso:picasso:2.71828' /*GESTIONAR IMAGEN*/
+    implementation 'de.hdodenhof:circleimageview:3.1.0'   /*IMAGEN CIRCULAR*/
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     implementation platform('com.google.firebase:firebase-bom:31.1.1')
     implementation 'com.google.firebase:firebase-analytics'
